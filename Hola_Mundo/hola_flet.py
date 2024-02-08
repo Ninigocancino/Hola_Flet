@@ -8,7 +8,7 @@ def main(page: ft.page):
     page.add(
         ft.Row (
             [
-                ft.Text("Hola mundo!!! esta es mi primer interacción con Flet"),
+                ft.Text("Hola mundo!!! esta es mi primer interacción con Flet", color="blue"),
 
             ],
             alignment=ft.MainAxisAlignment.CENTER
