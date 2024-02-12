@@ -6,4 +6,6 @@ def main(page: ft.Page):
 
     pass
 
-ft.app(target=main)
+ft.app(target=main) #Muestra la ejecuación del código en una ventana del sistema operativo nativo 
+
+#ft.app(target=main, view=ft.AppView.WEB_BROWSER) #Muestra la ejecución del código en el navegador por defecto de tu equipo
