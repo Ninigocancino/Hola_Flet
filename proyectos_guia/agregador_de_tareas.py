@@ -9,6 +9,6 @@ def main(page: ft.Page):
         new_task.update()
 
     new_task = ft.TextField(hint_text="Que necesitas hacer?", width=300)
-    page.add(ft.Row([new_task, ft.ElevatedButton("Agregar", on_click=add_clicked, visible=False) ]))
+    page.add(ft.Row([new_task, ft.ElevatedButton("Agregar", on_click=add_clicked, visible=True) ]))
 
 ft.app(target=main)
