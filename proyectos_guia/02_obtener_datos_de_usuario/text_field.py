@@ -10,7 +10,7 @@ def main(page):
             page.clean()
             page.add(ft.Text(f"Hola, {name}"))
 
-    txt_name = ft.TextField(label = "Tu nombre")
+    txt_name = ft.TextField(label = "Tu nombre es...")
 
     page.add(txt_name, ft.ElevatedButton("Di hola", on_click=btn_click))
 
