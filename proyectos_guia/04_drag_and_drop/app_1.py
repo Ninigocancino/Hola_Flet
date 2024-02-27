@@ -4,16 +4,18 @@ def main(page: ft.Page):
     page.title= "Arrastrar y soltar"
 
     def drag_accept(e):
+        #Trae el control 'draggable (de su origen) por su ID
         src = page.get_control(e.src_id)
-
+        # Actualiza el texto dentro del control darggable después de arrastrar y soltar
         src.content.content.value = "0"
-
+        # Actualiza el texto dentro del control objetivo después de arrastrar y soltar
         e.control.content.content.value = "1"
         page.update()
 
     page.add(
         ft.Row(
             [
+                #Contenedor origen
                 ft.Draggable(
                     group="numero",
                     content=ft.Container(
@@ -25,6 +27,7 @@ def main(page: ft.Page):
                         alignment=ft.alignment.center,
                     ),
                 ),
+                #Contenedor destino
                 ft.Container(width=100),
                 ft.DragTarget(
                     group="numero",
