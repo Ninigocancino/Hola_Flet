@@ -26,13 +26,14 @@ def main(page: ft.Page):
                         content=ft.Text("1", size=20),
                         alignment=ft.alignment.center,
                     ),
+                    #le indica al contenedor de origen como debe comportarse mientras el elemnto es arrastrado
                     content_when_dragging=ft.Container(
-                        width=50,
-                        height=50,
+                        width=45,
+                        height=45,
                         bgcolor=ft.colors.BLUE_GREY_200,
-                        border_radius=5,
+                        border_radius=0,
                     ),
-                    content_feedback=ft.Text(":O")
+                    content_feedback=ft.Text(":O") #Aquí se indica que cadena se visaulizará mientras el elemento es arrastrado
                 ),
                 #Contenedor destino
                 ft.Container(width=100),
