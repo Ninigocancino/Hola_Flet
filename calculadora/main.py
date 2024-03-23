@@ -84,6 +84,96 @@ def main(page: ft.page):
                     ),
 
 
+                    Row(
+                        controls=[
+                            ElevatedButton(
+                                text="4",
+                                bgcolor=colors.WHITE,
+                                color=colors.BLACK,
+                                expand=1,
+                            ),
+                            ElevatedButton(
+                                text="5",
+                                bgcolor=colors.WHITE,
+                                color=colors.BLACK,
+                                expand=1,
+                            ),
+                            ElevatedButton(
+                                text="6",
+                                bgcolor=colors.WHITE,
+                                color=colors.BLACK,
+                                expand=1,
+                            ),
+                            ElevatedButton(
+                                text="-",
+                                bgcolor=colors.WHITE,
+                                color=colors.BLACK,
+                                expand= 1,
+                            ),
+                        ]
+                    ),
+
+
+                    Row(
+                        controls=[
+                            ElevatedButton(
+                                text="1",
+                                bgcolor=colors.WHITE,
+                                color=colors.BLACK,
+                                expand=1,
+                            ),
+                            ElevatedButton(
+                                text="2",
+                                bgcolor=colors.WHITE,
+                                color=colors.BLACK,
+                                expand=1,
+                            ),
+                            ElevatedButton(
+                                text="3",
+                                bgcolor=colors.WHITE,
+                                color=colors.BLACK,
+                                expand=1,
+                            ),
+                            ElevatedButton(
+                                text="+",
+                                bgcolor=colors.WHITE,
+                                color=colors.BLACK,
+                                expand= 1,
+                            ),
+                        ]
+                    ),
+
+
+                    Row(
+                        controls=[
+                            ElevatedButton(
+                                text="0",
+                                bgcolor=colors.WHITE,
+                                color=colors.BLACK,
+                                expand=1,
+                            ),
+                            ElevatedButton(
+                                text=".",
+                                bgcolor=colors.WHITE,
+                                color=colors.BLACK,
+                                expand=1,
+                            ),
+                            ElevatedButton(
+                                text="=",
+                                bgcolor=colors.WHITE,
+                                color=colors.BLACK,
+                                expand=1,
+                            ),
+                            ElevatedButton(
+                                text="",
+                                bgcolor=colors.WHITE,
+                                color=colors.BLACK,
+                                expand= 1,
+                            ),
+                        ]
+                    ),
+
+
                 ]
             )
         )
