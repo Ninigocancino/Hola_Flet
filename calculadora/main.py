@@ -51,7 +51,39 @@ def main(page: ft.page):
                                 expand= 1,
                             ),
                         ]
-                    )
+                    ),
+
+
+                    Row(
+                        controls=[
+                            ElevatedButton(
+                                text="7",
+                                bgcolor=colors.WHITE,
+                                color=colors.BLACK,
+                                expand=1,
+                            ),
+                            ElevatedButton(
+                                text="8",
+                                bgcolor=colors.WHITE,
+                                color=colors.BLACK,
+                                expand=1,
+                            ),
+                            ElevatedButton(
+                                text="9",
+                                bgcolor=colors.WHITE,
+                                color=colors.BLACK,
+                                expand=1,
+                            ),
+                            ElevatedButton(
+                                text="*",
+                                bgcolor=colors.WHITE,
+                                color=colors.BLACK,
+                                expand= 1,
+                            ),
+                        ]
+                    ),
+
+
                 ]
             )
         )
