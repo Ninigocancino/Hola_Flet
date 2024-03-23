@@ -1,10 +1,63 @@
 import flet as ft
 
+from flet import (
+    Column,
+    Container,
+    ElevatedButton,
+    Page,
+    Row,
+    Text,
+    border_radius,
+    colors
+)
+
 def main(page: ft.page):
     page.title = "Calculadora app"
-    resultado = ft.Text(value="0") #Guarda el valor del resultado por default
+    resultado = ft.Text(value="0", color=colors.WHITE,size=20) #Guarda el valor del resultado por default
 
     page.add(
+        Container(
+            width=350,
+            bgcolor=colors.BLACK,
+            border_radius= border_radius.all(15),
+            padding=10,
+            content=Column(
+                controls=[
+                    Row(controls=[resultado],alignment="end"),
+                    Row(
+                        controls=[
+                            ElevatedButton(
+                                text="AC",
+                                bgcolor=colors.YELLOW,
+                                color=colors.BLACK,
+                                expand=1,
+                            ),
+                            ElevatedButton(
+                                text="+/-",
+                                bgcolor=colors.WHITE,
+                                color=colors.BLACK,
+                                expand=1,
+                            ),
+                            ElevatedButton(
+                                text="%",
+                                bgcolor=colors.WHITE,
+                                color=colors.BLACK,
+                                expand=1,
+                            ),
+                            ElevatedButton(
+                                text="/",
+                                bgcolor=colors.WHITE,
+                                color=colors.BLACK,
+                                expand= 1,
+                            ),
+                        ]
+                    )
+                ]
+            )
+        )
+    )
+
+"""
         ft.Row(controls=[resultado]), #Muestra el resultado en pantlla
         ft.Row(
             controls =[
@@ -50,5 +103,6 @@ def main(page: ft.page):
             ]
         ),
     )
+"""
 
 ft.app(target=main)
