@@ -28,25 +28,25 @@ def main(page: ft.page):
                         controls=[
                             ElevatedButton(
                                 text="AC",
-                                bgcolor=colors.YELLOW,
-                                color=colors.BLACK,
+                                bgcolor=colors.GREY_800,
+                                color=colors.WHITE,
                                 expand=1,
                             ),
                             ElevatedButton(
                                 text="+/-",
-                                bgcolor=colors.WHITE,
-                                color=colors.BLACK,
+                                bgcolor=colors.GREY_800,
+                                color=colors.WHITE,
                                 expand=1,
                             ),
                             ElevatedButton(
                                 text="%",
-                                bgcolor=colors.WHITE,
-                                color=colors.BLACK,
+                                bgcolor=colors.GREY_800,
+                                color=colors.WHITE,
                                 expand=1,
                             ),
                             ElevatedButton(
                                 text="/",
-                                bgcolor=colors.WHITE,
+                                bgcolor=colors.ORANGE,
                                 color=colors.BLACK,
                                 expand= 1,
                             ),
@@ -76,7 +76,7 @@ def main(page: ft.page):
                             ),
                             ElevatedButton(
                                 text="*",
-                                bgcolor=colors.WHITE,
+                                bgcolor=colors.ORANGE,
                                 color=colors.BLACK,
                                 expand= 1,
                             ),
@@ -106,7 +106,7 @@ def main(page: ft.page):
                             ),
                             ElevatedButton(
                                 text="-",
-                                bgcolor=colors.WHITE,
+                                bgcolor=colors.ORANGE,
                                 color=colors.BLACK,
                                 expand= 1,
                             ),
@@ -136,7 +136,7 @@ def main(page: ft.page):
                             ),
                             ElevatedButton(
                                 text="+",
-                                bgcolor=colors.WHITE,
+                                bgcolor=colors.ORANGE,
                                 color=colors.BLACK,
                                 expand= 1,
                             ),
@@ -150,7 +150,7 @@ def main(page: ft.page):
                                 text="0",
                                 bgcolor=colors.WHITE,
                                 color=colors.BLACK,
-                                expand=1,
+                                expand=2,
                             ),
                             ElevatedButton(
                                 text=".",
@@ -160,15 +160,9 @@ def main(page: ft.page):
                             ),
                             ElevatedButton(
                                 text="=",
-                                bgcolor=colors.WHITE,
+                                bgcolor=colors.ORANGE,
                                 color=colors.BLACK,
                                 expand=1,
-                            ),
-                            ElevatedButton(
-                                text="",
-                                bgcolor=colors.WHITE,
-                                color=colors.BLACK,
-                                expand= 1,
                             ),
                         ]
                     ),
