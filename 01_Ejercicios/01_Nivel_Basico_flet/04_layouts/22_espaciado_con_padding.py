@@ -2,9 +2,6 @@ import flet as ft
 
 def main(page: ft.Page):
     page.title="Espaciado con Padding"
-    #page.vertical_alignment = ft.MainAxisAlignment.CENTER
-    #page.horizontal_alignment = ft.CrossAxisAlignment.CENTER
-    #page.spacing= 40
     page.padding=200
 
     texto_2 = ft.Text("Texto 2")
@@ -19,7 +16,6 @@ def main(page: ft.Page):
                     height=100
                     ),
                     bgcolor=ft.colors.BLUE_400,
-                    #padding=120
                     ),
                 ]     
     )
@@ -36,7 +32,6 @@ def main(page: ft.Page):
                     height=100
                     ),
                     bgcolor=ft.colors.BLUE_100,
-                    #padding=20
                     ),
                 ]     
     )
